@@ -15,7 +15,7 @@ interface IClampOptions {
 })
 export class NgxClampDirective implements OnInit {
 
-  @Input() ngxClampOptions: IClampOptions = {};
+  @Input() ngxClampOptions: IClampOptions = { clamp: 2 };
   @Output() ngxClampResponse = new EventEmitter<{
     original: string;
     clamped: string;
