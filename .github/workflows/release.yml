@@ -15,8 +15,10 @@ jobs:
         with:
           node-version: "16.x"
       - run: npm ci
-      - run: npm run build:ngx-clamp --if-present
-      # - run: npm test
+      - run: npm test
+      - run: npm run build --if-present
+      - run: cd ./dist/ngx-clamp
+      # - run: npm publish
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TKN }}
