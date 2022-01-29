@@ -1,0 +1,31 @@
+{
+  "name": "ngx-clamp",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSubhan01/ngx-clamp.git"
+  },
+  "keywords": [
+    "clamp",
+    "ng-clamp",
+    "ngx-clamp",
+    "html-clamp",
+    "line-clamp",
+    "text-clamp",
+    "angular-clamp"
+  ],
+  "author": "Muhammad Subhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSubhan01/ngx-clamp/issues"
+  },
+  "homepage": "https://github.com/MSubhan01/ngx-clamp#readme",
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "clamp.ts": "^1.0.6"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
