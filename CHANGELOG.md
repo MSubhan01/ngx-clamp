@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/MSubhan01/ngx-clamp/compare/v1.0.3...v1.0.4) (2022-01-29)
+
+
+### Bug Fixes
+
+* **publish:** publish directory for semantic-release/npm changed ([ba843bc](https://github.com/MSubhan01/ngx-clamp/commit/ba843bc94dc281e4e8c95a0a79e089d2143c124d))
+
 ## [1.0.2](https://github.com/MSubhan01/ngx-clamp/compare/v1.0.1...v1.0.2) (2022-01-29)
 
 
