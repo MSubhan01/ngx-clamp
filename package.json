@@ -1,6 +1,6 @@
 {
   "name": "ngx-clamp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-clamp-demo --open",
@@ -76,20 +76,14 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
       "@semantic-release/github",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
       [
         "@semantic-release/npm",
         {
           "pkgRoot": "./dist/ngx-clamp"
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json"
-          ]
         }
       ]
     ]

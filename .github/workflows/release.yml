@@ -27,3 +27,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TKN }}
           NPM_TOKEN: ${{ secrets.NPM_SECRET }}
+      - name: Patch Version Repository
+        run: npm version patch
+      - name: Patch Version Library
+        working-directory: ./projects/ngx-clamp
+        run: npm version patch
