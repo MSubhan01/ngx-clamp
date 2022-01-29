@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/MSubhan01/ngx-clamp/compare/v1.0.0...v1.0.1) (2022-01-29)
+
+
+### Bug Fixes
+
+* **package.json:** version updated to v1.0.1 ([05dffd9](https://github.com/MSubhan01/ngx-clamp/commit/05dffd9695970d65f64fece0c67bca3af7f82b08))
+
 # 1.0.0 (2022-01-29)
 
 
