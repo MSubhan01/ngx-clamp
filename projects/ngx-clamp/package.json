@@ -1,6 +1,6 @@
 {
   "name": "ngx-clamp",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MSubhan01/ngx-clamp.git"
@@ -28,11 +28,8 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "main": "bundles/ngx-clamp.umd.js",
-  "module": "fesm2015/ngx-clamp.js",
-  "es2015": "fesm2015/ngx-clamp.js",
-  "esm2015": "esm2015/ngx-clamp.js",
-  "fesm2015": "fesm2015/ngx-clamp.js",
-  "typings": "ngx-clamp.d.ts",
-  "sideEffects": false
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
