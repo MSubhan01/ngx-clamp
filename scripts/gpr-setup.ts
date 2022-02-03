@@ -6,7 +6,7 @@ import distPackage from '../dist/ngx-clamp/package.json';
 const pkg: Record<string, any> = distPackage;
 
 pkg.publishConfig = {};
-pkg.name = '@msubhan/ngx-clamp';
+pkg.name = '@MSubhan01/ngx-clamp';
 pkg.publishConfig.registry = 'https://npm.pkg.github.com';
 
 writeFileSync(join(__dirname, '..', 'dist', 'ngx-clamp', 'package.json'), JSON.stringify(pkg, null, 2));
