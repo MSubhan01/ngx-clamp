@@ -1,6 +1,14 @@
 {
   "name": "ngx-clamp",
   "version": "1.0.10-1",
+  "author": {
+    "name": "Muhammad Subhan",
+    "email": "muhammadsubhanshahid01@gmail.com",
+    "url": "https://github.com/MSubhan01"
+  },
+  "private": false,
+  "license": "ISC",
+  "description": "Angular directive for clamping multi-line text.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve ngx-clamp",
@@ -9,7 +17,6 @@
     "build:demo": "ng build demo --configuration production",
     "deploy:ghpages": "yarn build && yarn build:demo && ngh --dir=dist/demo",
     "publish:npmjs": "yarn syncprojects && yarn build && npm publish --folder dist/ngx-clamp",
-    "gpr:setup": "yarn ts-node --project scripts/tsconfig.ts-node.json scripts/gpr-setup",
     "test": "ng test",
     "test:coverage": "ng test --code-coverage",
     "lint": "ng lint",
@@ -20,31 +27,12 @@
     "syncprojects": "ts-node --project scripts/tsconfig.ts-node.json scripts/sync-projects",
     "version": "yarn syncprojects && git add projects/ngx-clamp/ && auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --follow-tags",
-    "publish:beta": "yarn && yarn build && npm publish --folder dist --tag beta",
+    "publish:beta": "yarn && yarn build && npm publish --folder dist/ngx-clamp --tag beta",
     "release:beta": "npm version prerelease -m \"chore(update): prelease %s β\"",
     "release:patch": "npm version patch -m \"chore(update): patch release %s 🐛 \"",
     "release:minor": "npm version minor -m \"chore(update): release %s 🚀\"",
     "release:major": "npm version major -m \"chore(update): major release %s 💥 \""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MSubhan01/ngx-clamp.git"
-  },
-  "keywords": [
-    "clamp",
-    "ng-clamp",
-    "ngx-clamp",
-    "html-clamp",
-    "line-clamp",
-    "text-clamp",
-    "angular-clamp"
-  ],
-  "author": "Muhammad Subhan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MSubhan01/ngx-clamp/issues"
-  },
-  "homepage": "https://github.com/MSubhan01/ngx-clamp#readme",
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
@@ -87,7 +75,26 @@
     "ts-node": "^10.4.0",
     "typescript": "~4.3.5"
   },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSubhan01/ngx-clamp.git"
+  },
+  "keywords": [
+    "clamp",
+    "ng-clamp",
+    "ngx-clamp",
+    "html-clamp",
+    "line-clamp",
+    "text-clamp",
+    "angular-clamp"
+  ],
+  "bugs": {
+    "url": "https://github.com/MSubhan01/ngx-clamp/issues"
+  },
+  "homepage": "https://github.com/MSubhan01/ngx-clamp#readme",
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   }
