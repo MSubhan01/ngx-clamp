@@ -1,6 +1,6 @@
 {
   "name": "ngx-clamp",
-  "version": "1.0.9",
+  "version": "1.0.10-0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MSubhan01/ngx-clamp.git"
@@ -31,5 +31,8 @@
   "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

@@ -3,11 +3,28 @@
   "version": "1.0.9",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve ngx-clamp-demo --open",
-    "build": "ng build ngx-clamp",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve ngx-clamp",
+    "start:demo": "ng serve demo",
+    "build": "ng build ngx-clamp --configuration production",
+    "build:demo": "ng build demo --configuration production",
+    "deploy:ghpages": "yarn build && yarn build:demo && ngh --dir=dist/demo",
+    "publish:npmjs": "yarn syncprojects && yarn build && npm publish --folder dist/ngx-clamp",
+    "gpr:setup": "yarn ts-node --project scripts/tsconfig.ts-node.json scripts/gpr-setup",
     "test": "ng test",
-    "lint": "ng lint"
+    "test:coverage": "ng test --code-coverage",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "create:version": "ts-node --project scripts/tsconfig.ts-node.json scripts/create-version",
+    "postinstall": "yarn create:version",
+    "prepare": "husky install",
+    "syncprojects": "ts-node --project scripts/tsconfig.ts-node.json scripts/sync-projects",
+    "version": "yarn syncprojects && git add projects/ngx-clamp/ && auto-changelog -p && git add CHANGELOG.md",
+    "postversion": "git push && git push --follow-tags",
+    "publish:beta": "yarn && yarn build && npm publish --folder dist --tag beta",
+    "release:beta": "npm version prerelease -m \"chore(update): prelease %s β\"",
+    "release:patch": "npm version patch -m \"chore(update): patch release %s 🐛 \"",
+    "release:minor": "npm version minor -m \"chore(update): release %s 🚀\"",
+    "release:major": "npm version major -m \"chore(update): major release %s 💥 \""
   },
   "repository": {
     "type": "git",
@@ -51,11 +68,15 @@
     "@angular-eslint/template-parser": "12.7.0",
     "@angular/cli": "~12.2.7",
     "@angular/compiler-cli": "~12.2.0",
+    "@types/fs-extra": "^9.0.13",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.28.2",
     "@typescript-eslint/parser": "4.28.2",
+    "auto-changelog": "^2.3.0",
     "eslint": "^7.26.0",
+    "fs-extra": "^10.0.0",
+    "husky": "^7.0.4",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -63,7 +84,11 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^12.1.1",
+    "ts-node": "^10.4.0",
     "typescript": "~4.3.5"
   },
-  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7."
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }

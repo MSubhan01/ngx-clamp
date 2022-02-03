@@ -17,6 +17,8 @@
         "dist/ngx-clamp"
       ]
     },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
