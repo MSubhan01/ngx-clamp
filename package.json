@@ -17,6 +17,7 @@
     "build:demo": "ng build demo --configuration production",
     "deploy:ghpages": "yarn build && yarn build:demo && ngh --dir=dist/demo",
     "publish:npmjs": "yarn syncprojects && yarn build && npm publish --folder dist/ngx-clamp",
+    "gpr:setup": "yarn ts-node --project scripts/tsconfig.ts-node.json scripts/gpr-setup",
     "test": "ng test",
     "test:coverage": "ng test --code-coverage",
     "lint": "ng lint",

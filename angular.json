@@ -30,6 +30,13 @@
             "main": "projects/ngx-clamp/src/test.ts",
             "tsConfig": "projects/ngx-clamp/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-clamp/karma.conf.js"
+          },
+          "configurations": {
+            "ci": {
+              "watch": false,
+              "progress": false,
+              "browsers": "ChromeHeadlessCI"
+            }
           }
         },
         "lint": {
