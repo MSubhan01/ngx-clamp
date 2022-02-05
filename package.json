@@ -1,6 +1,6 @@
 {
   "name": "ngx-clamp",
-  "version": "1.0.10-10",
+  "version": "1.0.10-9",
   "author": {
     "name": "Muhammad Subhan",
     "email": "muhammadsubhanshahid01@gmail.com",
@@ -28,7 +28,7 @@
     "version": "yarn syncprojects && git add projects/ngx-clamp/ && auto-changelog -p && git add CHANGELOG.md",
     "postversion": "git push && git push --follow-tags",
     "publish:beta": "yarn && yarn build && npm publish --folder dist/ngx-clamp --tag beta",
-    "release:beta": "npm version prerelease -m \"chore(update): prelease %s β\"",
+    "release:beta": "npm version prerelease --preid \"beta\" -m \"chore(update): prelease %s β\"",
     "release:patch": "npm version patch -m \"chore(update): patch release %s 🐛 \"",
     "release:minor": "npm version minor -m \"chore(update): release %s 🚀\"",
     "release:major": "npm version major -m \"chore(update): major release %s 💥 \""
