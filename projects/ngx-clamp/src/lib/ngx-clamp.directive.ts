@@ -1,14 +1,5 @@
 import { Directive, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { clamp } from 'clamp.ts';
-
-interface IClampOptions {
-  clamp?: number | string | 'auto';
-  useNativeClamp?: boolean;
-  splitOnChars?: Array<string>;
-  animate?: boolean;
-  truncationChar?: string;
-  truncationHTML?: string;
-}
+import { clamp, IClampOptions, IClampResponse } from 'clamp.ts';
 
 @Directive({
   selector: '[ngx-clamp]'
@@ -16,10 +7,7 @@ interface IClampOptions {
 export class NgxClampDirective implements OnInit {
 
   @Input() ngxClampOptions: IClampOptions = { clamp: 2 };
-  @Output() ngxClampResponse = new EventEmitter<{
-    original: string;
-    clamped: string;
-  }>();
+  @Output() ngxClampResponse = new EventEmitter<IClampResponse>();
 
   constructor(private contentElementRef: ElementRef) { }
 

@@ -11,8 +11,7 @@
   "description": "Angular directive for clamping multi-line text.",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve ngx-clamp",
-    "start:demo": "ng serve demo",
+    "start": "ng serve demo",
     "build": "ng build ngx-clamp --configuration production",
     "build:demo": "ng build demo --configuration production",
     "deploy:ghpages": "yarn build && yarn build:demo && ngh --dir=dist/demo",
@@ -43,7 +42,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "clamp.ts": "^1.0.6",
+    "clamp.ts": "^1.1.1",
+    "ngx-clamp": "^1.0.10-7",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

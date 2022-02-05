@@ -2562,10 +2562,10 @@ circular-dependency-plugin@5.2.2:
   resolved "https://registry.npmjs.org/circular-dependency-plugin/-/circular-dependency-plugin-5.2.2.tgz"
   integrity sha512-g38K9Cm5WRwlaH6g03B9OEz/0qRizI+2I7n+Gz+L5DxXJAPAiWQvwlYNm1V1jkdpUv95bOe/ASm2vfi/G560jQ==
 
-clamp.ts@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/clamp.ts/-/clamp.ts-1.0.6.tgz"
-  integrity sha512-2jAxs99DfdSFJUmWxc0NlABaFmCCw5dFJrLsWyIJDxsiIBm68HKYiRzCRAdp5gm+jDAFsqsVJ31FJ5xKsnp1KA==
+clamp.ts@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/clamp.ts/-/clamp.ts-1.1.1.tgz#f3a26fd36e695407bfb82b8a26ff70c145281443"
+  integrity sha512-cRNzEm0Ce0P5D6tIQLnr/WLD1dH7kDRHwu81V4ysWduZXPGV3Vy8v0IUzFhOJ4AOKc9BuGnQ/eYd+1Rwr1aVEQ==
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -5655,6 +5655,13 @@ ng-packagr@^12.1.1:
     stylus "^0.54.8"
   optionalDependencies:
     esbuild "0.13.8"
+
+ngx-clamp@^1.0.10-7:
+  version "1.0.10-7"
+  resolved "https://registry.yarnpkg.com/ngx-clamp/-/ngx-clamp-1.0.10-7.tgz#7b3900e8e7af2127d303343353bdfaa3b35ba01e"
+  integrity sha512-uQAZbIi7GI1+K2mnKXlrXERsZEttaqPvSN/XhWXoF4fFw39ing7RehVb14pZGLInl5R0XnQIFnX+tDyECkCtDA==
+  dependencies:
+    tslib "^2.3.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
