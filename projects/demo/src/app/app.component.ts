@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { } from 'ngx-clamp';
+// import { } from 'ngx-clamp';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,5 @@ import { } from 'ngx-clamp';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo';
-  options = {};
+  options = { clamp: 3 };
 }
