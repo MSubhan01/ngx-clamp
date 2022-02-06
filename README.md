@@ -24,7 +24,7 @@ npm install ngx-clamp
 ```
 
 ```
-yarn install ngx-clamp
+yarn add ngx-clamp
 ```
 
 ## Usage
