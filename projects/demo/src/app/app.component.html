@@ -1,4 +1,4 @@
-<h2>Example 1</h2>
+<h2>Example 1 > default</h2>
 <p ngx-clamp>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus dolor, feugiat ut feugiat at, euismod id tellus.
   Nullam maximus risus non sem auctor, nec facilisis mauris consequat. Fusce accumsan volutpat massa, sit amet pulvinar
@@ -35,8 +35,45 @@
   euismod quam vel semper aliquam. Morbi mollis rhoncus condimentum. Duis aliquam quam in dui lacinia lacinia. Nulla
   eget semper eros. Suspendisse potenti.
 </p>
-<h2>Example 2</h2>
+<h2>Example 2 > with clamp 3 lines option</h2>
 <p ngx-clamp [ngxClampOptions]="options">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus dolor, feugiat ut feugiat at, euismod id tellus.
+  Nullam maximus risus non sem auctor, nec facilisis mauris consequat. Fusce accumsan volutpat massa, sit amet pulvinar
+  felis. Nam eleifend euismod odio, a varius lacus sagittis a. Vestibulum eleifend et neque id fringilla. Suspendisse
+  vitae nulla id massa ultricies tincidunt sit amet ut orci. Nunc aliquam dolor leo, molestie tristique metus cursus in.
+  Duis in nisl ac lorem feugiat ultrices ut et lacus. Nunc volutpat quis purus sit amet gravida. Proin ultricies, orci
+  ut dictum lacinia, nulla mi dapibus libero, vel elementum arcu orci vitae lectus. Duis arcu felis, rutrum a placerat
+  sed, lacinia accumsan nisl. Nam tempor nulla neque, eget pharetra felis rutrum dignissim. Duis vitae lectus mattis,
+  scelerisque eros a, pellentesque eros. Proin id metus gravida, fringilla lacus non, gravida nisl. Sed eget tortor ut
+  metus porttitor cursus. Etiam tempus, odio sed volutpat convallis, neque mi facilisis enim, sed rhoncus ex est nec
+  nibh.
+  <br>
+  Morbi ut aliquam dui. Nunc eleifend quis neque eu mollis. Mauris molestie in sapien sit amet porta. Morbi in cursus
+  sapien. Phasellus scelerisque elit ac pellentesque convallis. Sed et enim ipsum. Nullam eu hendrerit est. Ut vel orci
+  vitae justo bibendum gravida. Aenean ultricies nunc orci. Morbi ultrices augue vel ornare venenatis. Proin
+  pellentesque pellentesque eros a faucibus. Vestibulum sed auctor metus, non fringilla arcu. Duis tincidunt vitae urna
+  vel commodo.
+  <br>
+  Vestibulum magna metus, sollicitudin vel metus facilisis, iaculis viverra ipsum. Cras non sagittis dui. Integer rutrum
+  tristique gravida. Etiam vestibulum leo erat, sit amet dictum nisi imperdiet ut. Nulla pulvinar vel orci eu facilisis.
+  Donec blandit erat et erat dignissim mattis. Ut in tellus nisl.
+  <br>
+  Aenean neque turpis, auctor quis gravida sed, ornare at massa. Mauris consequat tellus ac ultrices feugiat. Maecenas
+  et enim sit amet neque efficitur cursus. Curabitur scelerisque eu velit nec dapibus. Curabitur nec dui auctor,
+  convallis nunc eu, feugiat arcu. Sed non bibendum turpis. Nullam et lectus sed nibh faucibus maximus. Vestibulum in
+  dui in felis tincidunt condimentum maximus laoreet lacus. Fusce scelerisque velit in varius dictum. Sed vel vulputate
+  sapien. Nulla id arcu lorem. Maecenas ligula sem, varius vel ultricies id, placerat in enim. Phasellus pretium orci
+  nec ex cursus, vitae euismod lacus iaculis. Nunc scelerisque dapibus urna eu congue. Nulla malesuada magna libero,
+  eget faucibus nibh eleifend sit amet.
+  <br>
+  Vestibulum orci tellus, pellentesque id finibus vel, volutpat non nulla. Duis rutrum sit amet neque quis bibendum.
+  Cras efficitur dolor sit amet ipsum rhoncus condimentum. Donec iaculis eleifend dui tempus dapibus. Suspendisse
+  volutpat tellus in ullamcorper fringilla. Aenean non nisl ipsum. Donec dignissim urna vitae congue feugiat. Praesent
+  euismod quam vel semper aliquam. Morbi mollis rhoncus condimentum. Duis aliquam quam in dui lacinia lacinia. Nulla
+  eget semper eros. Suspendisse potenti.
+</p>
+<h2>Example 3 > tooltip on hover</h2>
+<p ngx-clamp (ngxClampResponse)="response=$event" [title]="response.original">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lectus dolor, feugiat ut feugiat at, euismod id tellus.
   Nullam maximus risus non sem auctor, nec facilisis mauris consequat. Fusce accumsan volutpat massa, sit amet pulvinar
   felis. Nam eleifend euismod odio, a varius lacus sagittis a. Vestibulum eleifend et neque id fringilla. Suspendisse

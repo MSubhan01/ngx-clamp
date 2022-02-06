@@ -5656,10 +5656,10 @@ ng-packagr@^12.1.1:
   optionalDependencies:
     esbuild "0.13.8"
 
-ngx-clamp@^1.0.10-7:
-  version "1.0.10-7"
-  resolved "https://registry.yarnpkg.com/ngx-clamp/-/ngx-clamp-1.0.10-7.tgz#7b3900e8e7af2127d303343353bdfaa3b35ba01e"
-  integrity sha512-uQAZbIi7GI1+K2mnKXlrXERsZEttaqPvSN/XhWXoF4fFw39ing7RehVb14pZGLInl5R0XnQIFnX+tDyECkCtDA==
+ngx-clamp@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ngx-clamp/-/ngx-clamp-1.0.10.tgz#2afd10b00db7180e10ca1dee4dd2e58ecc1004a3"
+  integrity sha512-u7EPbF/Zf6unUl79HwEpiIN1/rkcsOAxkCchhqRhdI0i9JDHlGG7TDk0RY0+ghdGUrthHE2F+YQwdIngO/g+Mw==
   dependencies:
     tslib "^2.3.0"
 

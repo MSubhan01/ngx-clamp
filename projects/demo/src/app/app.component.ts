@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { } from 'ngx-clamp';
+import { IClampOptions, IClampResponse } from 'ngx-clamp';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  options = { clamp: 3 };
+  options: IClampOptions = { clamp: 3 };
+  response: IClampResponse = { clamped: '', original: '' };
 }
