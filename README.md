@@ -1,7 +1,7 @@
 # ngx-clamp
 
 ### Angular (12+) directive that clamps the content of an element by adding an ellipsis to it if the content inside is too long.
-<!-- [![Build Status](https://img.shields.io/travis/clampy-js/ngx-clamp.svg)](https://travis-ci.org/clampy-js/ngx-clamp) -->
+
 ![NPM release](https://github.com/MSubhan01/ngx-clamp/actions/workflows/main.yml/badge.svg)
 ![version on NPM](https://img.shields.io/npm/v/ngx-clamp)
 ![bundle size](https://img.shields.io/bundlephobia/minzip/ngx-clamp)
@@ -10,7 +10,7 @@
 [![GitHub license](https://img.shields.io/github/license/MSubhan01/ngx-clamp.svg)](https://github.com/MSubhan01/ngx-clamp/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/dt/ngx-clamp.svg)](https://www.npmjs.com/package/ngx-clamp)
 
-It uses [clampy.ts](https://github.com/aamir1995/clamp.ts) library behind the scene to apply the ellipsis.
+It uses [clamp.ts](https://github.com/aamir1995/clamp.ts) library behind the scene to apply the ellipsis.
 
 It automatically re-clamps itself when the element or the browser window change size.
 

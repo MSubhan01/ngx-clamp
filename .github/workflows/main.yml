@@ -44,8 +44,9 @@ jobs:
       #     verbose: false
       #     dry_run: false
 
-      - name: Build demo app # Build Schematics and move
-        run: yarn build:demo --base-href https://MSubhan01.github.io/ngx-clamp/
+      # # Demo Build for GitHub Pages 
+      # - name: Build demo app # Build Schematics and move
+      #   run: yarn build:demo --base-href https://MSubhan01.github.io/ngx-clamp/
 
       - name: Build ngx-clamp # Build
         run: yarn build
@@ -62,27 +63,28 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_SECRET }}
 
-      # Publish to GitHub Package Registry
-      - name: Set up package for GPR
-        if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
-        run: yarn gpr:setup
+      # # Publish to GitHub Package Registry
+      # - name: Set up package for GPR
+      #   if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
+      #   run: yarn gpr:setup
 
-      - name: Use GPR
-        if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
-        uses: actions/setup-node@main
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com/
-          scope: '@MSubhan01'
+      # - name: Use GPR
+      #   if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
+      #   uses: actions/setup-node@main
+      #   with:
+      #     node-version: 14
+      #     registry-url: https://npm.pkg.github.com/
+      #     scope: '@MSubhan01'
 
-      - name: Publish to GitHub Package Registry
-        if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
-        run: |
-          cd dist/ngx-clamp
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{github.token}}
+      # - name: Publish to GitHub Package Registry
+      #   if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
+      #   run: |
+      #     cd dist/ngx-clamp
+      #     npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{github.token}}
 
+      # # Need Environment Variables
       # - name: Deploy Github Pages
       #   if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'beta') == false
       #   uses: peaceiris/actions-gh-pages@v2.5.0
